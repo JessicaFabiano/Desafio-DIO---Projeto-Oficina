@@ -1,23 +1,23 @@
 # 🛠️ Projeto Banco de Dados Oficina Mecânica
 
-## 📖 Descrição
+## Descrição
 Este projeto implementa um **banco de dados relacional** para simular o funcionamento de uma **oficina mecânica**.  
 O objetivo é gerenciar **clientes, veículos, ordens de serviço, técnicos, serviços, materiais e pagamentos**, além de permitir **consultas analíticas** que auxiliam na tomada de decisão.
 
 O sistema foi modelado para oferecer:
-- 📌 **Gestão de clientes**: cadastro de pessoas físicas e jurídicas (indústrias), permitindo análise de frotas e contratos corporativos.  
-- 🛠️ **Controle operacional**: registro de ordens de serviço, serviços executados, técnicos responsáveis e materiais aplicados.  
-- ⚠️ **Ativos críticos**: identificação de veículos/equipamentos essenciais para o cliente, priorizando sua manutenção.  
-- 🔧 **Manutenção preventiva**: classificação das ordens de serviço em preventiva, corretiva ou emergencial, permitindo análises de confiabilidade.  
-- 💰 **Gestão financeira**: acompanhamento de pagamentos, impostos e faturamento por cliente.  
-- ♻️ **Sustentabilidade**: rastreamento de materiais recicláveis e cálculo do percentual de ordens sustentáveis.  
+- **Gestão de clientes**: cadastro de pessoas físicas e jurídicas (indústrias), permitindo análise de frotas e contratos corporativos.  
+- **Controle operacional**: registro de ordens de serviço, serviços executados, técnicos responsáveis e materiais aplicados.  
+- **Ativos críticos**: identificação de veículos/equipamentos essenciais para o cliente, priorizando sua manutenção.  
+- **Manutenção preventiva**: classificação das ordens de serviço em preventiva, corretiva ou emergencial, permitindo análises de confiabilidade.  
+- **Gestão financeira**: acompanhamento de pagamentos, impostos e faturamento por cliente.  
+- **Sustentabilidade**: rastreamento de materiais recicláveis e cálculo do percentual de ordens sustentáveis.  
 
 > ⚠️ Todos os dados são fictícios.  
 > 🎯 O foco está em **boas práticas de modelagem** e **consultas SQL**, de forma clara e didática.
 
 ---
 
-## 🏗️ Modelagem
+## Modelagem
 
 O banco foi estruturado com as seguintes entidades principais:
 
@@ -33,7 +33,7 @@ O banco foi estruturado com as seguintes entidades principais:
 
 ---
 
-## 📖 Explicação do Modelo ER
+## Explicação do Modelo ER
 
 - **Cliente → OrdemServico**: um cliente pode ter várias ordens, mas cada OS pertence a apenas um cliente.  
 - **OrdemServico → OS_Servico → Servico**: relação N:N entre ordens e serviços.  
@@ -44,7 +44,7 @@ O banco foi estruturado com as seguintes entidades principais:
 
 ---
 
-## 🔮 Possíveis Extensões
+## Possíveis Extensões
 
 - **Controle de estoque de materiais**: registrar entradas e saídas de peças.  
 - **Histórico de manutenção por veículo**: rastrear todas as OS vinculadas a um equipamento.  
@@ -54,7 +54,7 @@ O banco foi estruturado com as seguintes entidades principais:
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Criar o banco de dados:
    ```sql
